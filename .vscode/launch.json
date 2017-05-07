@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "learn-express-sequelize",
+            "name": "learning-express-sequelize",
             "program": "${workspaceRoot}/bin/www",
             "cwd": "${workspaceRoot}"
         },
