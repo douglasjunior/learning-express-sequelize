@@ -6,6 +6,9 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+// remove double slashes
+app.use(function (req,res,next) { req.url = req.url.replace(/[/]+/g, '/'); next(); });
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
